@@ -2,7 +2,7 @@ import { ref } from 'vue';
 import { mount, later } from '../../../test';
 import { Form, FormInstance } from '..';
 import { Field } from '../../field';
-import type { VueWrapper } from '@vue/test-utils';
+import type { VueWrapper } from '@vue/test-utils'; // 这种用法是让VueWrapper协助类型检查和声明的，运行时完全不存在；
 
 export async function submitForm(wrapper: VueWrapper<any>) {
   await wrapper.find('form').trigger('submit');

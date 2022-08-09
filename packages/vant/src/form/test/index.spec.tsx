@@ -1,6 +1,6 @@
 import { Form } from '..';
 import { Field } from '../../field';
-import { later, mount } from '../../../test';
+import { later, mount } from '../../../test'; // 根据此文件夹index中对mount的定义，以及later的定义；
 import { submitForm } from './shared';
 
 test('should not reset validation after blurred when validate-trigger is onChange', async () => {
